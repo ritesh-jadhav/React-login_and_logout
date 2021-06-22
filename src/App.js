@@ -16,7 +16,6 @@ function App() {
   const logoutHandler = () => {
     setIsLoggedIn(false);
   };
-
   return (
     <React.Fragment>
       <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
