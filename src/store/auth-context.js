@@ -3,7 +3,11 @@ import React, { useState,useEffect } from 'react';
 const AuthContext =React.createContext({
     isLoggedIn: false,
     onLogout : () => {},
+<<<<<<< HEAD
     onLogin : (email,password) => {}
+=======
+    onLogin : (email,password)=>{}
+>>>>>>> 075360167d33d55aa8420c47c0015836295c0cc2
 });
 
 export const AuthContextProvider = ( props ) =>{
@@ -24,7 +28,11 @@ export const AuthContextProvider = ( props ) =>{
 
   const loginHandler=()=>{
     localStorage.setItem("isLoggedIn", "1");
+<<<<<<< HEAD
     setIsLoggedIn(true);
+=======
+      setIsLoggedIn(true);
+>>>>>>> 075360167d33d55aa8420c47c0015836295c0cc2
   };
 
   return(
@@ -34,8 +42,16 @@ export const AuthContextProvider = ( props ) =>{
         onLogin: loginHandler,
        }} 
     >
+<<<<<<< HEAD
         {props.children}
     </AuthContext.Provider>
     );
 };
+=======
+        {props.childern}
+    </AuthContext.Provider>
+    );
+};
+
+>>>>>>> 075360167d33d55aa8420c47c0015836295c0cc2
 export default AuthContext; 
